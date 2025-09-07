@@ -1,0 +1,260 @@
+/* ========== RESET ========== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f9fafb; color: #111; }
+
+/* ========== LAYOUT ========== */
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #fff;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.sidebar h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+
+/* Group logo + button together */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem; /* smaller gap */
+  flex-direction: row;
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+}
+
+/* Put Launch Career directly under kanban */
+.board-list {
+  margin-top: 0;   /* remove the extra spacing */
+}
+
+.board-list button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  background: #6366f1;
+  color: #fff;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+
+/* Main */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  overflow-x: auto;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.main-header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.add-btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 9999px;
+  background: #6366f1;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Board Columns */
+.board {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  overflow-x: auto;
+}
+.column {
+  flex: 1;
+  min-width: 260px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.column h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #6b7280; /* Gray-500 for dimmer text */
+}
+
+
+/* Task Card */
+.task {
+  background: #fff;
+  padding: 0.75rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+.task h4 {
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.modal-content {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 350px;
+  max-width: 90%;
+}
+.modal-content h2 {
+  margin-bottom: 1rem;
+}
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+.modal-content button {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.save-btn { background: #6366f1; color: #fff; }
+.delete-btn { background: #ef4444; color: #fff; margin-left: 0.5rem; }
+.close-btn { float: right; cursor: pointer; font-size: 1.2rem; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app { flex-direction: column; }
+  .sidebar { width: 100%; flex-direction: row; align-items: center; }
+  .board { flex-direction: column; }
+}
+/* Responsive */
+@media (max-width: 1024px) {
+  .main {
+    padding: 1rem;
+  }
+  .board {
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+    height: auto; /* let content flow */
+  }
+
+  /* Sidebar moves to top as a header bar */
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .logo-section {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .board-list {
+    margin-top: 0;
+  }
+
+  .board-list button {
+    width: auto;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.9rem;
+  }
+
+  /* Main header stacks nicely */
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .add-btn {
+    width: 100%;
+  }
+
+  /* Columns stack vertically */
+  .board {
+    flex-direction: column;
+    overflow-x: visible;
+  }
+
+  .column {
+    min-width: unset;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  .main-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .modal-content {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .add-btn,
+  .board-list button {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.8rem;
+  }
+}
