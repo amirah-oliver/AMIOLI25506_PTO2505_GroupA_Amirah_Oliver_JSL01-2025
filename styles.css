@@ -164,7 +164,7 @@ body { font-family: Arial, sans-serif; background: #f9fafb; color: #111; }
 .delete-btn { background: #ef4444; color: #fff; margin-left: 0.5rem; }
 .close-btn { float: right; cursor: pointer; font-size: 1.2rem; }
 
-/* Responsive */
+/* Responsive */ 
 @media (max-width: 768px) {
   .app { flex-direction: column; }
   .sidebar { width: 100%; flex-direction: row; align-items: center; }
