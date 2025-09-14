@@ -4,20 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kanban Board</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="app">
     <!-- Sidebar -->
-    <div class="sidebar">
-      <div class="logo-section">
-        <img src="favicon.svg" alt="Logo" class="logo" /> 
-        <h2>kanban</h2>
-      </div>
-      <div class="board-list">
-        <button>Launch Career</button>
-      </div>
+<nav class="Sidebar">
+  <div class="logo-section">
+    <img src="favicon.svg" alt="Logo" class="logo" /> 
+    <h2>kanban</h2>
+  </div>
+
+  <div class="boards-section">
+    <p class="boards-label">ALL BOARDS (1)</p>
+    <div class="board-list">
+      <button class="launch_button">Launch Career</button>
     </div>
+  </div>
+</nav>
+
+
 
     <!-- Main -->
     <div class="main">
@@ -26,15 +33,26 @@
         <button class="add-btn">+ Add New Task</button>
       </div>
 
-      <div class="board">
+      <div class="board"> 
         <div class="column" data-status="todo">
-          <h3>TODO (<span class="count">0</span>)</h3>
+          <h3>TODO (<span class="count">0</span>)</h3> 
+          <div class="column" data-status="todo">
+          <div class="task"><h4>Launch Epic Career 🚀</h4><p></p></div> 
+         <div class="task"><h4>Conquer React ⚛</h4><p></p></div>
+         <div class="task"><h4>Understand Databases ⚙</h4><p></p></div>
+         <div class="task"><h4>Crush Frameworks 🖼</h4><p></p></div>
+        </div>
+
         </div>
         <div class="column" data-status="doing">
-          <h3>DOING (<span class="count">0</span>)</h3>
+          <h3>DOING (<span class="count">3</span>)</h3>
+          <div class="task"><h4>Master Javascript 💛</h4><p></p></div>
+          <div class="task"><h4>Never Give Up 🏆</h4><p></p></div>
         </div>
         <div class="column" data-status="done">
-          <h3>DONE (<span class="count">0</span>)</h3>
+          <h3>DONE (<span class="count">3</span>)</h3>
+          <div class="task"><h4>Explore ES6 Features 🚀</h4><p></p></div>
+          <div class="task"><h4>Have Fun 🥳</h4><p></p></div>
         </div>
       </div>
     </div>
