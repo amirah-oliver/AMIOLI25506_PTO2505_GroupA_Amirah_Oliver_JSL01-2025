@@ -1,14 +1,14 @@
 <div align="center">
 
-<hr> 
+<hr>
 </div>
 
 <div align="center">
 <a href="#" target="blank">
 <img src="./assets/favicon.svg" width="90" alt="Logo" />
-</a> 
+</a>
 
-<h2> Project Name : Kanban Board </h2> 
+<h2> Project Name : Kanban Board </h2>
 
 ![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -31,7 +31,7 @@ With its clean interface and modal-based task editor, this project helps users *
 - **🗑 Delete Tasks**: Remove tasks when they’re no longer needed.  
 - **🔄 Live Counts**: Each column dynamically updates the task count.  
 - **🎨 Modern UI**: Clean, minimalistic interface with hover effects.  
-- **📱 Responsive Design**: Works across devices with flexible layouts.
+- **📱 Responsive Design**: Works across devices with flexible layouts.  
 
 ## 👩‍💻 Tech Stack
 
@@ -39,11 +39,7 @@ With its clean interface and modal-based task editor, this project helps users *
 - **CSS3**: Styling and layout with modern responsive design.  
 - **Vanilla JavaScript**: Task management logic (CRUD operations).  
 
-## 🚀 How to Use
-
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/your-username/kanban-board.git
+---
 
 ## 📦 Getting Started
 
@@ -51,94 +47,65 @@ To get a local copy of this project up and running, follow these steps.
 
 ### 🚀 Prerequisites
 
-- **Node.js** (v16.x or higher) and **npm** or **yarn**.
-- **Npm** If you prefer using npm for package management and running scripts.
-- **PostgreSQL** (or another supported SQL database).
+- A modern web browser (Chrome, Firefox, Edge, Safari).  
+- (Optional) **VS Code** or any code editor to explore and edit the code.  
+- (Optional) A local server (e.g., Live Server extension in VS Code) for smoother development.  
 
 ## 🛠️ Installation
 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/sumonta056/readme-template.git
-   cd readme-template
-   ```
+   git clone https://github.com/your-username/kanban-board.git
+   cd kanban-board
+Open the project:
 
-2. **Install dependencies:**
+Simply open the index.html file in your browser.
+(Or use a live server for hot reload while editing.)
 
-   Using Npm:
+📖 Usage
+✔ Running the Website
 
-   ```bash
-   npm install
-   ```
+Open index.html directly in your browser.
 
-3. **Set up environment variables:**
+Or run with a live server (for example in VS Code, right-click → Open with Live Server).
 
-   Create a `.env` file in the root directory and add the following variables:
+The app will open in your browser and you can start adding, editing, and deleting tasks.
 
-   ```env
-   NEXT_PUBLIC_APP_URL=http://localhost:3000
-
-   #database
-   DATABASE_URL=your_database_url
-   DATABASE_SECRET=your_database_secret
-   DRIZZLE_DATABASE_URL=your_database_url_for_drizzle
-
-   #auth
-   AUTH_SECRET=any_random_secret
-   ```
-
-4. **Run database migrations:**
-
-   Ensure your database is running and then run:
-
-   ```bash
-   npm run drizzle-kit migrate
-   ```
-
-5. **Start the development server:**
-
-   ```bash
-   npm run dev
-   ```
-
-## 📖 Usage
-
-### ✔ Running the Website
-
-- **Development mode:** `npm run dev`, `yarn dev`, or `bun dev`.
-- **Production mode:** `npm run build && npm start`, `yarn build && yarn start`, or `bun run build && bun start`.
-
-> Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
-
-### 📃 API Documentation
-
-The API documentation for this application is available at [http://localhost:3000/api/docs](http://localhost:3000/api/docs). It details all endpoints and their usage.
-
-## 🤝 Contributing
+🤝 Contributing
 
 We welcome contributions to this project. Please follow these steps to contribute:
 
-1. **Fork the repository.**
-2. **Create a new branch** (`git checkout -b feature/your-feature-name`).
-3. **Make your changes** and commit them (`git commit -m 'Add some feature'`).
-4. **Push to the branch** (`git push origin feature/your-feature-name`).
-5. **Open a pull request**.
+Fork the repository.
 
-Please make sure to update tests as appropriate.
+Create a new branch (git checkout -b feature/your-feature-name).
 
-## 🐛 Issues
+Make your changes and commit them (git commit -m 'Add some feature').
 
-If you encounter any issues while using or setting up the project, please check the [Issues]() section to see if it has already been reported. If not, feel free to open a new issue detailing the problem.
+Push to the branch (git push origin feature/your-feature-name).
+
+Open a pull request.
+
+Please make sure your changes keep the UI clean and functional.
+
+🐛 Issues
+
+If you encounter any issues while using or setting up the project, please check the Issues
+ section to see if it has already been reported. If not, feel free to open a new issue detailing the problem.
 
 When reporting an issue, please include:
 
-- A clear and descriptive title.
-- A detailed description of the problem.
-- Steps to reproduce the issue.
-- Any relevant logs or screenshots.
-- The environment in which the issue occurs (OS, browser, Node.js version, etc.).
+A clear and descriptive title.
 
-## 📜 License
+A detailed description of the problem.
 
-Distributed under the MIT License. See [License](/LICENSE) for more information.
+Steps to reproduce the issue.
+
+Any relevant screenshots.
+
+The environment in which the issue occurs (OS, browser, etc.).
+
+📜 License
+
+Distributed under the MIT License. See LICENSE
+ for more information.
